@@ -5,9 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        a:focus, button:focus{
+            outline: 5px solid red;
+            outline-offset: 5px;
+        }
+
+        body{
+            background-color: antiquewhite;
+            color: rgb(63, 146, 167);
+        }
         img{
+            height: 100px;
             width: 280px;
-            height: 90px;
+        }
+        .peces{
+            width: 250px;
+            height: 250px;
         }
     </style>
 </head>
@@ -25,7 +38,28 @@
                 <img src="./logo_ies.png" alt="Logo del Instituto Trujillo">
             </article>
         </section>
+        <button>Aceptar</button>
+        <br>
+        <br>
+        <img src="./peces.png" alt="peces" class="peces">
+
+        <form>
+            <label for="usuario"></label>
+            <input type="text" placeholder="Ingrese Usuario" name="usuario">
+
+            <label for="contraseña"></label>
+            <input type="text" placeholder="Ingrese Contraseña" name="contraseña">
+            <button>Ingresar</button>
+        </form>
+        !--Los enlaces para navegar--!
+        <a href="nostros.html">Ir a nosotros</a>
+
+        !--Los botones se usan para acciones--!
+        <button>Guardar</button>
     </main>
 
+    <footer>
+        <p>Instituto Trujillo</p>
+    </footer>
 </body>
 </html>
